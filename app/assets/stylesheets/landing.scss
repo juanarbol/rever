@@ -1,3 +1,20 @@
-// Place all the styles related to the landing controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.intro {
+  position: relative;
+  min-height: calc(100vh - 150px);;
+  min-width: 100%;
+  background: linear-gradient(0deg, rgba(73, 173, 255, 0.1), rgba(73, 173, 255, 0.3)), url('intro.jpg') no-repeat center;
+  background-size: cover;
+
+  .main-message {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 3em;
+    left: 50%;
+    letter-spacing: 0.01em;
+    padding: 5px 5px;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+  }
+}
