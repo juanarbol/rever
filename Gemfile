@@ -8,8 +8,6 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Use pg as db
-gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -35,6 +33,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Bootstrap gem
 gem 'bootstrap-sass', '~> 3.3.7'
+
+group :production do
+  # Use pg as db
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
